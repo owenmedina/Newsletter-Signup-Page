@@ -68,7 +68,7 @@ app.post("/failure", function(req, res, next) {
 });
 
 // Setup server to listen to ports
-app.listen(port, function() {
+app.listen(process.env.PORT || port, function() {
     console.log("Server listening on localhost:" + port);
 });
 
